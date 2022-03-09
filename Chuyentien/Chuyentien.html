@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document 111</title>
+</head>
+
+<body>
+    <form>
+        <label for="">Amount</label><br>
+        <input type="text" id="Amount">
+        <label for="">From</label>
+        <select name="From" id="idFrom">
+            <option value="usd">USD</option>
+            <option value="vnd">VND</option>
+        </select>
+        <label for="">To</label>
+        <select name="t" id="idTo">
+            <option value="usd">USD</option>
+            <option value="vnd">VND</option>
+        </select>
+        <button type="button" id="btn" onclick="convertAmount()">Convert</button>
+    </form>
+    <script>
+
+        function convertAmount() {
+            var _amount = document.getElementById("Amount").value;
+            var _From = document.getElementById("idFrom").value;
+            var _To = document.getElementById("idTo").value;
+            if (_From == "usd" && _To == "vnd") {
+                 _amount = _amount*23000;
+                 alert("Ket qua la: " + _amount);
+            }
+               if(_From=='usd' && _To=='usd') {
+                   alert("Ket qua la:" + _amount);
+               }
+               if(_From=="vnd" && _To=='vnd'){
+                   alert("Ket qua al:" + _amount);
+               }
+               if(_From=='vnd' && _To=='usd' ){
+                    _amount = _amount/23000;
+                   alert("Ket qua la:" + _amount);
+               }
+        }    
+    </script>
+
+
+</body>
+
+</html>
