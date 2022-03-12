@@ -1,0 +1,56 @@
+h1 {
+    color: blue;
+}
+body {
+    
+    border: 2px solid blue;
+    padding: 50px;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+
+}
+
+.color-left {
+    float: left;
+    width: 50%;
+    color: blue;
+}
+
+.color-right {
+    float: right;
+    width: 50%;
+    color: blue;
+}
+
+table {
+    border: 1px solid black;
+   
+    margin-left: 120px;
+    font-weight: 700;
+}
+
+
+table, tr {
+     /* border-collapse: collapse; */
+}
+
+th {
+    padding: 20px;
+    border: 1px solid rgb(209, 212, 219);
+    
+} 
+
+tr {
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid rgb(209, 212, 219);
+}
+.mycolor {
+    background-color: orange;
+}
+.mycolor1 {
+    background-color:yellow ;
+}
